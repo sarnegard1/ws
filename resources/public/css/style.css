@@ -12,12 +12,10 @@
 }
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
 
-*,
-*:before,
-*:after {
-  margin: 0;
+* {
   box-sizing: border-box;
 }
+
 body {
   -webkit-font-smoothing: antialiased;
 	color: #3C4156;
@@ -245,6 +243,7 @@ p.paragraph {
 	margin-top: 15px;
 }
 .testimonial {
+	background-color: white;
 	margin-top: 40px;
 	border-radius: 3px;
 	padding: 20px;
@@ -341,8 +340,10 @@ p.paragraph {
 	.ctas-button-2 {
 		margin: 10px 0 0 0;
 	}
-}.feature3 {
-	padding: 90px 0;
+}
+.feature3, .feature4, .feature2{
+	padding: 50px 0;}
+.feature3 {
 	background-color: #F5F6FA;
 }
 .feature3 .emoji {
