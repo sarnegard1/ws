@@ -27,10 +27,11 @@
      [:div.col.span3
       [:h2 "Client"]
       [:p
-       "Scholastic was the assigned client for the student project during the User Experience Design Immersive at General Assembly, San Francisco 2014 "]]
+       "Scholastic was the assigned client for the student project during the User"
+       " Experience Design Immersive at General Assembly, San Francisco 2014 "]]
      [:div.col.span3
       [:h2 "My Role"]
-      [:p "User research, persona development, feature development, scope definition, project management, sketching and ideation, branding, presentation deck"]]]]
+      [:p "User research, persona development, feature development, scope definition,"" project management, sketching and ideation, branding, presentation deck"]]]]
    [:section.container
     [:h2.section-title "Business Research"]
     [:div.row
@@ -186,29 +187,45 @@
          [:strong "Creative Confidence & Engagement:"]
          " open ended prompts to encourage deeper thinking and give importance to the child’s own thoughts and beliefs"]]]]]]])
 
-(def section-info
-  [{:section-title "Introduction"
-    :blurbs [{:title "Educational Value"
-            :description "other reading quizzes were based more on remembering facts. The questions should be about important information from the book rather than trivia"}
-           {:title "Fun & Interactivity"
-            :description "create a more engaging experience by using img, videos and other media"}
-           {:title "Creative Confidence & Engagement"
-            :description "open ended prompts to encourage deeper thinking and give importance to the child’s own thoughts and beliefs"}]}])
+; (def section-info
+;   [{:section-title "Introduction"
+;     :blurbs [{:p
+;                 "For this project, our team was tasked with creating a reading engagement program for Scholastic. Our first course of action was to research what goals Scholastic would seek to accomplish through this program. We found that Scholastic's reputation as an educational resource was in decline among students and teachers. The question then became, how can we build an application that regains Scholastic's reputation and increase children's interest in reading? Our solution was to create a reading incentive product that is engaging and educational for children. We believe this would :"}
+;
+;              {:bullets ["Solve parents' need to encourage children to read"
+;                          "Prove commitment to education"
+;                          "Foster excitement for Scholastic titles"]}
+;              {:title "Fun & Interactivity"
+;               :description "create a more engaging experience by using img, videos and other media"}
+;              {:title "Creative Confidence & Engagement"
+;               :description "open ended prompts to encourage deeper thinking and give importance to the child’s own thoughts and beliefs"}]}]
+;   [{:section-title "Introduction"
+;     :blurbs [{:title "Educational Value"
+;               :description "other reading quizzes were based more on remembering facts. The questions should be about important information from the book rather than trivia"
+;               :x "applesauce"}
+;              {:title "Fun & Interactivity"
+;               :description "create a more engaging experience by using img, videos and other media"}
+;              {:title "Creative Confidence & Engagement"
+;               :description "open ended prompts to encourage deeper thinking and give importance to the child’s own thoughts and beliefs"}]}])
+;
+; (defn section [{:keys [section-title blurbs]}]
+;   [:section.container-lrg
+;    [:h2 section-title]
+;    (into [:div.blurbs]
+;          (for [{:keys [title x p description bullets] :as b} blurbs]
+;             (when title
+;               [:li.blurb
+;                 [:strong title]
+;                 (str " - " description)])
+;             (when x [:h1 x])
+;             (when p [:p p])))])
 
-(defn section [{:keys [section-title blurbs]}]
-  [:section.container-lrg
-   [:h2 section-title]
-   (into [:ol.blurbs]
-         (for [{:keys [title description] :as b} blurbs]
-           [:li.blurb
-            [:strong title]
-            (str " - " description)]))])
 
 (defn content[]
   [:div
    [:header.header
     nav/nav-data]
-   (into [:div.section]
-         (map section section-info))
+  ;  (into [:div.section]
+  ;        (map section section-info))
    case-study
    footer/footer-data])
