@@ -157,6 +157,7 @@ p.paragraph {
 .container-sml {
   margin: auto;
   width: 100%;
+	overflow:auto;
 }
 .container-lrg {
   max-width: 1080px;
@@ -419,6 +420,7 @@ p.paragraph {
 img {
 	max-width: 100%;
 	float:left;
+	padding: 1em;
 
 }
 .img-text {
@@ -469,4 +471,15 @@ transform: scale(1.05);
 	width: 60%;
 	position: absolute;
 	left: 40%;
+}
+figcaption {
+	float:left;
+}
+.flex {
+	justify-content: center;
+  align-items: center;
+}
+.img-lrg {
+	margin: auto;
+	max-width: 75%;
 }

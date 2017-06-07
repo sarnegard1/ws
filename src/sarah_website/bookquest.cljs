@@ -188,9 +188,10 @@
 
 
 
-(def section-info
+(defn section-info
   [{:section-title "Introduction"
-    :content [[:ul
+    :text [
+              [:ul
                [:li
                 [:p [:strong "Educational Value:"]" other reading quizzes were based more on remembering facts. The questions should be about important information from the book rather than trivia"]]
                [:li
@@ -198,23 +199,24 @@
                [:li
                 [:p [:strong "Creative Confidence & Engagement:"]" open ended prompts to encourage deeper thinking and give importance to the child’s own thoughts and beliefs"]]]]}
    {:section-title "Introduction"
-    :content [:ul
-                 [:li
+    :text [
+              [:ul
+                [:li
                   [:p [:strong "Educational Value:"]" other reading quizzes were based more on remembering facts. The questions should be about important information from the book rather than trivia"]]
-                 [:li
+                [:li
                   [:p [:strong "Fun & Interactivity:"]"create a more engaging experience by using img, videos and other media"]]
-                 [:li
-                  [:p [:strong "Creative Confidence & Engagement:"]" open ended prompts to encourage deeper thinking and give importance to the child’s own thoughts and beliefs"]]]}])
+                [:li
+                  [:p [:strong "Creative Confidence & Engagement:"]" open ended prompts to encourage deeper thinking and give importance to the child’s own thoughts and beliefs"]]]]}])
 
-(defn section [{:keys [section-title content]}]
+(defn section [{:keys [section-title text]}]
   [:section.container-lrg
     [:h2 section-title]
-    [content]])
+    [text]])
 
 (defn content[]
   [:div
     [:header.header
       nav/nav-data]
-    ; (map section section-info)
+    (map section section-info)
     case-study
     footer/footer-data])
