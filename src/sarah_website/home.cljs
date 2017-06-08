@@ -12,7 +12,7 @@
 (def specialties
   [:div.feature3
    [:div.container-lrg
-    [:h2 "What I specialize in:"]
+    [:h2.center "What I specialize in"]
     [:div.flex
      [:div.col-4
       [:h3.subheading
@@ -49,46 +49,6 @@
         {:href project-link}
         "Read more"]])
 
-(defn work [more-projects project-info]
-  [:div
-    [:div.feature4
-     [:div.container-lrg [:h2 "What I've worked on"]]
-     [:div.container-lrg.flex
-      [:div.col-6.flex
-       [:div.androidiphone.sidedevices
-        [:div.phones
-         [:img {:src "img/phone_tyro.png", :alt ""}]]]]
-      [:div.col-1]
-      [:div.col-5.centervertical
-       [:h3.subheading "Tyro Payments"]
-       [:p.paragraph
-         "I was hired as a generalist Product Designer to work on "
-        [:a {:href "https://tyro.com/business-loans/"}"Tyro Smart Growth Funding"]
-        ", the first business lending product that allows customers to accept loans on a mobile platform, eliminating the need for paper applications and phone calls."]
-       [:p.paragraph
-         "Later on I specialized in Customer Research, working on discovery research, experiment design, and strategy for the loans product. "
-        [:a {:href "/resume.html"}
-         "View my complete resume"]]]]]
-    [:div.feature4
-     [:div.container-lrg.flex
-      [:div.col-5.centervertical
-       [:h3.subheading "Sookasa Inc"]
-       [:p.paragraph
-         "As the only full time designer for "
-        [:a {:href "https://www.sookasa.com/"} "Sookasa"
-         ", I worked on a wide range of products including signup optimization, a full "]
-        [:a {:href "#"} "UI redesign"
-         ", and a new threat scanning product"]]]
-      [:div.col-1]
-      [:div.col-6
-       [:div.sidedevices
-        [:div.computerwrapper
-         [:img.mask-img {:src "img/mac_book.png"}]]]]]]
-    [:div.feature2
-     [:div.container-lrg
-       [:h2 "Additional projects"]
-       (map more-projects project-info)]
-     [:div.container-lrg.flex]]])
 
 (defn index []
   [:div

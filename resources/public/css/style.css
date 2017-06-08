@@ -9,6 +9,12 @@ body{
   font-size: 14pt;
 }
 
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+	font-size: 12pt;
+  color: #3f51b5;
+}
 
 /** {
 	font-family: 'Fira Sans', sans-serif;
@@ -53,11 +59,14 @@ a:hover {
     line-height: 40px;
   }
 }
-.subheading {
+
+/*.subheading {
   font-size: 30px;
   line-height: 40px;
   font-weight: 500;
-}
+}*/
+
+*/
 @media (max-width: 900px) {
   .subheading {
     font-size: 26px;
@@ -488,7 +497,6 @@ figcaption {
 }
 .flex {
 	justify-content: center;
-  align-items: center;
 }
 .img-lrg {
 	margin: auto;
@@ -498,4 +506,9 @@ figcaption {
 section {
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+
+.centro-screen {
+	border: 1px solid;
+	padding: 0;
 }

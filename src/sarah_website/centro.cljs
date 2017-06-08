@@ -9,31 +9,20 @@
     [:h1.center "Centro Community Partners"]
     [:section
       [:div.flex
-        [:div.carousel-inner
-         [:div
-          [:img {:src "images/centro/clients_mockup.png", :alt "..."}]]
-         [:div
-          [:img
-           {:src "images/centro/michelle_mockup.png", :alt "..."}]]
-         [:div
-          [:img
-           {:src "images/centro/biz_plan_mockup.png", :alt "..."}]]
-         [:div
-          [:img {:src "images/centro/intro_mockup.png", :alt "..."}]]
-         [:div
-          [:img {:src "images/centro/note_1_mockup.png", :alt "..."}]]]
-       [:div.flex
          [:div.col-8
           [:div
            [:p
             "Centro Community Partners mission is to help communities grow by matching small business entrepreneurs with volunteer business advisors. They came to our team for a mobile app to improve advisor's communication with their entrepreneurs and improve advisor efficiency."]
            [:p
             "The goal was to create an app that could be integrated with their existing Business Planning Tool. Based on user and client needs, we created a concept that would include real time updates of their entrepreneur's progress, the ability to create notes on their work, and messaging features."]
+           [:h3 "My role"]
+           [:p "For this project I interviewed the client and target users, defined scope, sketched solutions, and created a prototype that was tested with users. I also presented the designs to the client."]
+
            [:div.button-container
             [:a.button-link
              {:target "_blank", :href "http://invis.io/GS18JQTPB"}
              "View Prototype"]
-            [:small "This will open Invision in a new tab"]]]]]]]
+            [:small " This will open Invision in a new tab"]]]]]]
     [:section
      [:div.flex
        [:div.col-8
@@ -43,7 +32,7 @@
          [:ul
           [:li
            [:strong
-            "Lack of knowledge of when entrepreneurs made changes to their business plan - "]
+            "Lack of visibility into entrepreneurs' progress - "]
            "this meant that advisors were sometimes ill prepared for advising sessions and unaware of whether entrepreneurs were keeping up with their work"]
           [:li
            [:strong "Disorganized communications - "]
@@ -57,25 +46,33 @@
      [:div.flex
        [:div.col-8
          [:h2.center "App Structure"]
-         [:img.constrain {:src "images/centro/site%20map.png", :alt ""}]
+         [:img.constrain {:src "img/centro/site_map.png", :alt ""}]
          [:h3 "Dashboard Sketches"]
-         [:div.row
+         [:p "Ideas for various dashboard layouts"]]]
+
+     [:div.flex
+        [:div.col-3
           [:img.col.span3
-           {:src "images/centro/resize/sarah_dash_1.jpg", :alt ""}]
+           {:src "img/centro/resize/sarah_dash_1.jpg", :alt ""}]]
+        [:div.col-3
           [:img.col.span3
-           {:src "images/centro/resize/sarah_dash_2.jpg", :alt ""}]
+           {:src "img/centro/resize/sarah_dash_2.jpg", :alt ""}]]
+        [:div.col-3
           [:img.col.span3
-           {:src "images/centro/resize/sarah_dash_3.jpg", :alt ""}]]
-         [:p "Possible dashboard layouts"]]]]
+           {:src "img/centro/resize/sarah_dash_3.jpg", :alt ""}]]]]
 
     [:section
       [:div.flex
-        [:div.col-12
-          [:h3 "Note Creation Flow Sketches"]
-          [:img {:src "images/centro/note_flow_1_v2.jpg", :alt ""}]
-          [:p "Flow 1- Creating a note on a separate screen"]
-          [:img {:src "images/centro/note_flow_2_v2.jpg", :alt "note taking sketch with marker"}]
-          [:p "Flow 2- Creating a marker linked to a note"]]]
+        [:div.col-8
+          [:h3 "Annotation flow paper prototypes"]
+          [:img {:src "img/centro/note_flow_1_v2.jpg", :alt ""}]
+          [:p
+            [:strong "Flow 1- "]
+            "Creating a note on a separate screen"]
+          [:img {:src "img/centro/note_flow_2_v2.jpg", :alt "note taking sketch with marker"}]
+          [:p
+            [:strong "Flow 2- "]
+            "Creating a marker linked to a note"]]]
       [:div.flex
          [:div.col-8
           [:p
@@ -83,101 +80,42 @@
 
 
     [:section.container
-       [:h2 "Results"]
-       [:h3 "Note Flow"]
        [:div.flex
-         [:div.col-12
-          [:img.col.span3
-           {:src "images/centro/resize/client_page.jpg", :alt ""}]
-          [:img.col.span3
-           {:src "images/centro/resize/michelle_page.jpg", :alt ""}]
-          [:img.col.span3
-           {:src "images/centro/resize/biz_plan.jpg", :alt ""}]
-          [:img.col.span3
-           {:src "images/centro/resize/biz_plan_intro.jpg", :alt ""}]]]
+        [:div.col-8
+          [:h3.center "More refined annotation flow after testing"]
+          [:p.center
+            [:a {:target "_blank", :href "http://invis.io/GS18JQTPB"}
+             "View Full Prototype"]
+            [:small " This will open Invision in a new tab"]]]]
        [:div.flex
-         [:div.col-12
-           [:img.col.span3
-             {:src "images/centro/resize/note1.jpg", :alt ""}]
-           [:img.col.span3
-             {:src "images/centro/resize/note2.jpg", :alt ""}]
-           [:img.col.span3
-             {:src "images/centro/resize/note3.jpg", :alt ""}]
-           [:img.col.span3
-             {:src "images/centro/resize/biz_plan_note_icon.jpg"}]
-
-          [:a.button-link
-           {:target "_blank", :href "http://invis.io/GS18JQTPB"}
-           "View Full Prototype"]
-          [:small "This will open Invision in a new tab"]]]]])
-
-
-(def centro-case-1
-  [:div.container-lrg
-     [:h1.center "Centro Community Partners"]
-
-     [:section
-      [:div.flex
-        [:div.carousel-inner
-         [:div
-          [:img {:src "images/centro/clients_mockup.png", :alt "..."}]]
-         [:div
-          [:img
-           {:src "images/centro/michelle_mockup.png", :alt "..."}]]
-         [:div
-          [:img
-           {:src "images/centro/biz_plan_mockup.png", :alt "..."}]]
-         [:div
-          [:img {:src "images/centro/intro_mockup.png", :alt "..."}]]
-         [:div
-          [:img {:src "images/centro/note_1_mockup.png", :alt "..."}]]]
+         [:div.col-4
+          [:img.centro-screen
+           {:src "img/centro/resize/client_page.jpg", :alt ""}]]
+         [:div.col-4
+          [:img.centro-screen
+           {:src "img/centro/resize/michelle_page.jpg", :alt ""}]]
+         [:div.col-4
+          [:img.centro-screen
+           {:src "img/centro/resize/biz_plan.jpg", :alt ""}]]
+         [:div.col-4
+          [:img.centro-screen
+           {:src "img/centro/resize/biz_plan_intro.jpg", :alt ""}]]]
        [:div.flex
-         [:div.col-8
-          [:div
-           [:p
-            "Centro Community Partners mission is to help communities grow by matching small business entrepreneurs with volunteer business advisors. They came to our team for a mobile app to improve advisor's communication with their entrepreneurs and improve advisor efficiency."]
-           [:p
-            "The goal was to create an app that could be integrated with their existing Business Planning Tool. Based on user and client needs, we created a concept that would include real time updates of their entrepreneur's progress, the ability to create notes on their work, and messaging features."]
-           [:div.button-container
-            [:a.button-link
-             {:target "_blank", :href "http://invis.io/GS18JQTPB"}
-             "View Prototype"]
-            [:small "This will open Invision in a new tab"]]]]]]]
+         [:div.col-4
+           [:img.centro-screen
+             {:src "img/centro/resize/note1.jpg", :alt ""}]]
+         [:div.col-4
+           [:img.centro-screen
+             {:src "img/centro/resize/note2.jpg", :alt ""}]]
+         [:div.col-4
+           [:img.centro-screen
+             {:src "img/centro/resize/note3.jpg", :alt ""}]]
+         [:div.col-4
+           [:img.centro-screen
+             {:src "img/centro/resize/biz_plan_note_icon.jpg"}]]]]])
 
 
 
-
-
-
-
-     [:section.container
-        [:h2 "Results"]
-        [:h3 "Note Flow"]
-        [:div.flex
-          [:div.col-12
-           [:img.col.span3
-            {:src "images/centro/resize/client_page.jpg", :alt ""}]
-           [:img.col.span3
-            {:src "images/centro/resize/michelle_page.jpg", :alt ""}]
-           [:img.col.span3
-            {:src "images/centro/resize/biz_plan.jpg", :alt ""}]
-           [:img.col.span3
-            {:src "images/centro/resize/biz_plan_intro.jpg", :alt ""}]]]
-        [:div.flex
-          [:div.col-12
-            [:img.col.span3
-              {:src "images/centro/resize/note1.jpg", :alt ""}]
-            [:img.col.span3
-              {:src "images/centro/resize/note2.jpg", :alt ""}]
-            [:img.col.span3
-              {:src "images/centro/resize/note3.jpg", :alt ""}]
-            [:img.col.span3
-              {:src "images/centro/resize/biz_plan_note_icon.jpg"}]
-
-           [:a.button-link
-            {:target "_blank", :href "http://invis.io/GS18JQTPB"}
-            "View Full Prototype"]
-           [:small "This will open Invision in a new tab"]]]]])
 
 
 (defn content[]

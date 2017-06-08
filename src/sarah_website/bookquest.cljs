@@ -133,7 +133,11 @@
           [:img {:src "img/schol/Jenny_SSNiF.png", :alt ""}]]]]
 
    [:section.container-lrg
-    [:h3.clear "User Flows"]
+    [:h2.center "Mapping flows and app structure"]
+    [:div.flex
+      [:div.col-8
+        [:p "The app had two target users, parents and students, who would each have different views in the app. Students could be under 13 years old which meant that additional steps were needed to allow them to sign up safely and securely."]
+        [:h3.center "User Flows"]]]
     [:div.flex
      [:div.col-6
       [:img {:src "img/schol/kid_userflow.png", :alt "Student happy path"}]]
@@ -142,7 +146,7 @@
       [:img {:src "img/schol/parent_userflow.png", :alt "Parent user flow"}]]]]
 
    [:section.container-lrg
-    [:h3 "Site Map"]
+    [:h3.center "Site Map"]
     [:div.flex
      [:img.img-lrg
       {:src "img/schol/sitemap.png", :alt "Site map"}]]]
@@ -162,8 +166,28 @@
 
    [:section
     [:h2.center "Low-fi Clickable Prototype"]
-    [:div.container-lrg
-     [:div.flex
+    [:div.flex
+      [:div.col-8
+       [:a.button-link
+         {:target "_blank", :href "http://invis.io/KC10SCQ8Q"}
+         "Visit complete prototype"]
+       [:small " This will open Invision in a new tab"]
+       [:p
+        "User goals addressed through student challenges:"]
+       [:ul
+        [:li
+         [:p
+          [:strong "Educational Value: "]
+          "other reading quizzes were based more on remembering facts. The questions should be about important information from the book rather than trivia"]]
+        [:li
+         [:p
+          [:strong "Fun & Interactivity: "]
+          "create a more engaging experience by using img, videos and other media"]]
+        [:li
+         [:p
+          [:strong "Creative Confidence & Engagement: "]
+          "open ended prompts to encourage deeper thinking and give importance to the child’s own thoughts and beliefs"]]]]]
+    [:div.flex
       [:div.col-4
        [:img {:src "img/schol/k_quiz_1.png", :alt "..."}]]
       [:div.col-4
@@ -171,32 +195,12 @@
       [:div.col-4
        [:img {:src "img/schol/k_quiz_3.png", :alt "..."}]]]
 
-     [:div.flex
+    [:div.flex
       [:div.col-4
        [:img {:src "img/schol/k_quiz_4.png", :alt "..."}]]
       [:div.col-4
-       [:img {:src "img/schol/k_quiz_5.png", :alt "..."}]]]
-     [:div.flex
-       [:div.col-8
-        [:a.button-link
-          {:target "_blank", :href "http://invis.io/KC10SCQ8Q"}
-          "Visit complete prototype"]
-        [:small " This will open Invision in a new tab"]
-        [:p
-         "User goals addressed through student challenges:"]
-        [:ul
-         [:li
-          [:p
-           [:strong "Educational Value: "]
-           "other reading quizzes were based more on remembering facts. The questions should be about important information from the book rather than trivia"]]
-         [:li
-          [:p
-           [:strong "Fun & Interactivity: "]
-           "create a more engaging experience by using img, videos and other media"]]
-         [:li
-          [:p
-           [:strong "Creative Confidence & Engagement: "]
-           "open ended prompts to encourage deeper thinking and give importance to the child’s own thoughts and beliefs"]]]]]]]])
+       [:img {:src "img/schol/k_quiz_5.png", :alt "..."}]]]]])
+
 
 ; (def section-info
 ;   [{:section-title "Introduction"
