@@ -2,7 +2,7 @@
 
 (def nav-data
   [:div.container-lrg
-   [:div.col-12.spread
+   [:div.spread
     [:div [:a.logo "Sarah Arnegard"]]
     [:div
      [:a.nav-link {:href "#work"} "Work "]

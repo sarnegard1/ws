@@ -22,7 +22,7 @@
 (defn works []
   [:div
     [:div.feature4
-     [:div.container-lrg [:h2 "What I've worked on"]]
+     [:h2.center "What I've worked on"]
      [:div.container-lrg.flex
       [:div.col-6.flex
        [:div.androidiphone.sidedevices
@@ -56,6 +56,8 @@
          [:img.mask-img {:src "img/mac_book.png"}]]]]]]
     [:div.feature2
      [:div.container-lrg
-       [:h2 "Additional projects"]
-       (map more-projects project-info)]
+       [:div.flex
+        [:div.col-8
+         [:h3.center "Additional projects"]
+         (map more-projects project-info)]]]
      [:div.container-lrg.flex]]])

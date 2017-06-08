@@ -28,6 +28,11 @@ goog.addDependency("../devtools/formatters.js", ['devtools.formatters'], ['devto
 goog.addDependency("../devtools/hints.js", ['devtools.hints'], ['cljs.stacktrace', 'cljs.core', 'devtools.context', 'devtools.prefs']);
 goog.addDependency("../devtools/core.js", ['devtools.core'], ['devtools.toolbox', 'devtools.util', 'cljs.core', 'devtools.async', 'devtools.formatters', 'devtools.hints', 'devtools.defaults', 'devtools.prefs']);
 goog.addDependency("../devtools/preload.js", ['devtools.preload'], ['cljs.core', 'devtools.core', 'devtools.prefs']);
+goog.addDependency("../sarah_website/work.js", ['sarah_website.work'], ['cljs.core']);
+goog.addDependency("../sarah_website/footer.js", ['sarah_website.footer'], ['cljs.core']);
+goog.addDependency("../sarah_website/recos.js", ['sarah_website.recos'], ['cljs.core']);
+goog.addDependency("../sarah_website/nav.js", ['sarah_website.nav'], ['cljs.core']);
+goog.addDependency("../sarah_website/betabrand.js", ['sarah_website.betabrand'], ['cljs.core', 'sarah_website.work', 'sarah_website.footer', 'sarah_website.recos', 'sarah_website.nav']);
 goog.addDependency("../reagent/interop.js", ['reagent.interop'], ['cljs.core']);
 goog.addDependency("../react.inc.js", ['cljsjs.react'], []);
 goog.addDependency("../reagent/debug.js", ['reagent.debug'], ['cljs.core']);
@@ -41,14 +46,10 @@ goog.addDependency("../reagent/dom/server.js", ['reagent.dom.server'], ['reagent
 goog.addDependency("../react-dom.inc.js", ['cljsjs.react.dom'], ['cljsjs.react']);
 goog.addDependency("../reagent/dom.js", ['reagent.dom'], ['reagent.impl.util', 'reagent.interop', 'reagent.ratom', 'cljs.core', 'reagent.impl.template', 'reagent.impl.batching', 'cljsjs.react.dom', 'reagent.debug']);
 goog.addDependency("../reagent/core.js", ['reagent.core'], ['reagent.impl.util', 'reagent.dom.server', 'reagent.interop', 'reagent.ratom', 'cljs.core', 'reagent.impl.template', 'reagent.impl.batching', 'reagent.impl.component', 'reagent.debug', 'reagent.dom']);
-goog.addDependency("../sarah_website/work.js", ['sarah_website.work'], ['cljs.core']);
-goog.addDependency("../sarah_website/footer.js", ['sarah_website.footer'], ['cljs.core']);
-goog.addDependency("../sarah_website/recos.js", ['sarah_website.recos'], ['cljs.core']);
-goog.addDependency("../sarah_website/nav.js", ['sarah_website.nav'], ['cljs.core']);
 goog.addDependency("../sarah_website/bookquest.js", ['sarah_website.bookquest'], ['cljs.core', 'sarah_website.work', 'sarah_website.footer', 'sarah_website.recos', 'sarah_website.nav']);
 goog.addDependency("../sarah_website/centro.js", ['sarah_website.centro'], ['cljs.core', 'sarah_website.work', 'sarah_website.footer', 'sarah_website.recos', 'sarah_website.nav']);
 goog.addDependency("../sarah_website/index.js", ['sarah_website.index'], ['cljs.core', 'sarah_website.work', 'sarah_website.footer', 'sarah_website.recos', 'sarah_website.nav']);
-goog.addDependency("../sarah_website/core.js", ['sarah_website.core'], ['reagent.core', 'cljs.core', 'sarah_website.bookquest', 'sarah_website.centro', 'sarah_website.index']);
+goog.addDependency("../sarah_website/core.js", ['sarah_website.core'], ['sarah_website.betabrand', 'reagent.core', 'cljs.core', 'sarah_website.bookquest', 'sarah_website.centro', 'sarah_website.index']);
 goog.addDependency("../cljs/core/async/impl/protocols.js", ['cljs.core.async.impl.protocols'], ['cljs.core']);
 goog.addDependency("../cljs/core/async/impl/buffers.js", ['cljs.core.async.impl.buffers'], ['cljs.core', 'cljs.core.async.impl.protocols']);
 goog.addDependency("../cljs/core/async/impl/dispatch.js", ['cljs.core.async.impl.dispatch'], ['cljs.core', 'cljs.core.async.impl.buffers', 'goog.async.nextTick']);
