@@ -2,12 +2,14 @@
   (:require
     [sarah-website.index :as i]
     [sarah-website.centro :as c]
+    [sarah-website.betabrand :as beta]
     [sarah-website.bookquest :as bq]
     [reagent.core :as reagent :refer [atom]]))
 
 (enable-console-print!)
 
 (reagent/render-component [:div
+                            [beta/content]
                             [c/content]
                             [bq/content]
                             [i/index]]
