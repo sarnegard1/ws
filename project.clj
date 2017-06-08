@@ -12,7 +12,6 @@
                   :exclusions [org.clojure/tools.reader]]
                  [reagent "0.6.0"]]
 
-
   :plugins [[lein-figwheel "0.5.10"]
             [lein-cljsbuild "1.1.5" :exclusions [[org.clojure/clojure]]]]
 
@@ -30,7 +29,7 @@
                            ;; in the default browser once Figwheel has
                            ;; started and complied your application.
                            ;; Comment this out once it no longer serves you.
-                           :open-urls ["http://localhost:3444/index.html"]}
+                           :open-urls ["http://localhost:3449/index.html"]}
 
                 :compiler {:main sarah-website.core
                            :asset-path "js/compiled/out"
