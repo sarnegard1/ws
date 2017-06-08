@@ -48,8 +48,9 @@ goog.addDependency("../reagent/dom.js", ['reagent.dom'], ['reagent.impl.util', '
 goog.addDependency("../reagent/core.js", ['reagent.core'], ['reagent.impl.util', 'reagent.dom.server', 'reagent.interop', 'reagent.ratom', 'cljs.core', 'reagent.impl.template', 'reagent.impl.batching', 'reagent.impl.component', 'reagent.debug', 'reagent.dom']);
 goog.addDependency("../sarah_website/bookquest.js", ['sarah_website.bookquest'], ['cljs.core', 'sarah_website.work', 'sarah_website.footer', 'sarah_website.recos', 'sarah_website.nav']);
 goog.addDependency("../sarah_website/centro.js", ['sarah_website.centro'], ['cljs.core', 'sarah_website.work', 'sarah_website.footer', 'sarah_website.recos', 'sarah_website.nav']);
-goog.addDependency("../sarah_website/index.js", ['sarah_website.index'], ['cljs.core', 'sarah_website.work', 'sarah_website.footer', 'sarah_website.recos', 'sarah_website.nav']);
-goog.addDependency("../sarah_website/core.js", ['sarah_website.core'], ['sarah_website.betabrand', 'reagent.core', 'cljs.core', 'sarah_website.bookquest', 'sarah_website.centro', 'sarah_website.index']);
+goog.addDependency("../sarah_website/home.js", ['sarah_website.home'], ['cljs.core', 'sarah_website.work', 'sarah_website.footer', 'sarah_website.recos', 'sarah_website.nav']);
+goog.addDependency("../sarah_website/sookasa.js", ['sarah_website.sookasa'], ['cljs.core', 'sarah_website.work', 'sarah_website.footer', 'sarah_website.recos', 'sarah_website.nav']);
+goog.addDependency("../sarah_website/core.js", ['sarah_website.core'], ['sarah_website.betabrand', 'reagent.core', 'cljs.core', 'sarah_website.bookquest', 'sarah_website.centro', 'sarah_website.home', 'sarah_website.sookasa']);
 goog.addDependency("../cljs/core/async/impl/protocols.js", ['cljs.core.async.impl.protocols'], ['cljs.core']);
 goog.addDependency("../cljs/core/async/impl/buffers.js", ['cljs.core.async.impl.buffers'], ['cljs.core', 'cljs.core.async.impl.protocols']);
 goog.addDependency("../cljs/core/async/impl/dispatch.js", ['cljs.core.async.impl.dispatch'], ['cljs.core', 'cljs.core.async.impl.buffers', 'goog.async.nextTick']);
@@ -67,3 +68,5 @@ goog.addDependency("../figwheel/client/socket.js", ['figwheel.client.socket'], [
 goog.addDependency("../figwheel/client/heads_up.js", ['figwheel.client.heads_up'], ['goog.dom', 'goog.string', 'cljs.core', 'goog.dom.dataset', 'goog.object', 'cljs.core.async', 'cljs.pprint', 'figwheel.client.utils', 'figwheel.client.socket', 'clojure.string']);
 goog.addDependency("../figwheel/client.js", ['figwheel.client'], ['goog.userAgent.product', 'goog.Uri', 'cljs.core', 'goog.object', 'cljs.core.async', 'figwheel.client.file_reloading', 'figwheel.client.utils', 'cljs.repl', 'figwheel.client.heads_up', 'figwheel.client.socket', 'clojure.string', 'cljs.reader']);
 goog.addDependency("../figwheel/connect/build_dev.js", ['figwheel.connect.build_dev'], ['sarah_website.core', 'cljs.core', 'figwheel.client', 'figwheel.client.utils']);
+goog.addDependency("../sarah_website/index.js", ['sarah_website.index'], ['cljs.core', 'sarah_website.work', 'sarah_website.footer', 'sarah_website.recos', 'sarah_website.nav']);
+goog.addDependency("../sarah_website/util.js", ['sarah_website.util'], ['cljs.core']);
