@@ -9,7 +9,7 @@
          :name "Dan Manian"
          :title "VP of Product"
          :company "Sookasa"}
-        {:quote "After Sarah joined the team, she hit the ground running. Sarah was an amazing asset for us, helping us with not just prototypes and development - but with higher-level thinking about our strategy and overall usability. We surely wouldn't have achieved as much as we wanted without Sarah's help. I would highly recommend Sarah and hope to work together again in the future."
+        {:quote "After Sarah joined the team, she hit the ground running. Sarah was an amazing asset for us, helping us with not just prototypes and development - but with higher-level thinking about our strategy and overall usability."
          :name "Will Jensen"
          :title "CEO / Cofounder"
          :company "Fetchh.io"}])
@@ -17,14 +17,14 @@
 (defn recos [{:keys [quote name title company]}]
  [:div.col-4
    [:div.testimonial
-    [:div.flex.flexvert
+    [:div
      [:div
       [:b name]
       [:br]
       [:span
         title " at " company]]]
     [:div.testimonial-content
-     [:p.paragraph quote]]]])
+     [:q.paragraph quote]]]])
 
 (defn content []
     [:div.feature3

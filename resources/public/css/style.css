@@ -65,7 +65,10 @@ a:hover {
   line-height: 40px;
   font-weight: 500;
 }*/
-
+q,
+blockquote {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
 */
 @media (max-width: 900px) {
   .subheading {
