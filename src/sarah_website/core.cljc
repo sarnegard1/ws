@@ -4,6 +4,7 @@
    [sarah-website.centro :as c]
    [sarah-website.betabrand :as beta]
    [sarah-website.bookquest :as bq]
+   [sarah-website.sookasa :as s]
    #?(:clj [hiccup.page :as hp])
    #?(:cljs [reagent.core :as reagent :refer [atom]]))
   #?(:clj
@@ -14,6 +15,7 @@
 
 (def pages
   {beta/content "betabrand.html"
+   s/content "sookasa.html"
    c/content "centro.html"
    bq/content "bookquest.html"
    home/index "index.html"})
@@ -26,6 +28,7 @@
    (reagent/render-component
      [:div
       [beta/content]
+      [s/content]
       [c/content]
       [bq/content]
       [home/index]]
@@ -40,9 +43,9 @@
    (defn spitter [filename content]
      (spit (str "blog/" filename) content)))
 
-#?(:clj (defn add-css [hiccup]
+#?(:clj (defn add-css [hiccup]))
 
-          ))
+
 
 #?(:clj
    (defn compile-blog! []
