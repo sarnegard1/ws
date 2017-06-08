@@ -1,17 +1,17 @@
 (ns sarah-website.bookquest
-	(:require [sarah-website.recos :as recos]
-						[sarah-website.work :as work]
-						[sarah-website.footer :as footer]
-						[sarah-website.nav :as nav]))
+  (:require [sarah-website.recos :as recos]
+            [sarah-website.work :as work]
+            [sarah-website.footer :as footer]
+            [sarah-website.nav :as nav]))
 
 (def case-study
   [:div.container-lrg
-    [:h1.project.center "BookQuest"]
+    [:h1.center "BookQuest"]
 
     [:section
       [:div.flex
        [:div.col-8
-        
+
         [:p
          "For this project, our team was tasked with creating a reading engagement program for Scholastic. Our first course of action was to research what goals Scholastic would seek to accomplish through this program. We found that Scholastic's reputation as an educational resource was in decline among students and teachers. The question then became, how can we build an application that regains Scholastic's reputation and increase children's interest in reading? Our solution was to create a reading incentive product that is engaging and educational for children. We believe this would :"]
         [:ul
@@ -233,10 +233,10 @@
 
 
 (defn content[]
-	[:div
-	 [:header.header
-		nav/nav-data]
-	;  (into [:div.section]
-	;        (map section section-info))
-	 case-study
-	 footer/footer-data])
+  [:div
+   [:header.header
+    nav/nav-data]
+  ;  (into [:div.section]
+  ;        (map section section-info))
+   case-study
+   footer/footer-data])

@@ -8,7 +8,7 @@
 (enable-console-print!)
 
 (reagent/render-component [:div
-                            ; [c/content]
+                            [c/content]
                             [bq/content]
                             [i/index]]
                           (. js/document (getElementById "app")))

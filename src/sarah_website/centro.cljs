@@ -9,53 +9,27 @@
     [:header.header
       nav/nav-data]
     [:div.container-lrg
-     [:h1.project "Centro Community Partners"]
+     [:h1.center "Centro Community Partners"]
 
-     [:section.project-header
-      [:div.row
-       [:div#carousel-example-generic.col.span6.carousel.slide
-        {:data-ride "carousel", :data-interval "false"}
-        [:ol.carousel-indicators
-         [:li.active
-          {:data-target "#carousel-example-generic",
-           :data-slide-to "0"}]
-         [:li
-          {:data-target "#carousel-example-generic",
-           :data-slide-to "1"}]
-         [:li
-          {:data-target "#carousel-example-generic",
-           :data-slide-to "2"}]
-         [:li
-          {:data-target "#carousel-example-generic",
-           :data-slide-to "3"}]
-         [:li
-          {:data-target "#carousel-example-generic",
-           :data-slide-to "4"}]]
+     [:section
+      [:div.flex
+
 
         [:div.carousel-inner
-         [:div.item.active
+         [:div
           [:img {:src "images/centro/clients_mockup.png", :alt "..."}]]
-         [:div.item
+         [:div
           [:img
            {:src "images/centro/michelle_mockup.png", :alt "..."}]]
-         [:div.item
+         [:div
           [:img
            {:src "images/centro/biz_plan_mockup.png", :alt "..."}]]
-         [:div.item
+         [:div
           [:img {:src "images/centro/intro_mockup.png", :alt "..."}]]
-         [:div.item
+         [:div
           [:img {:src "images/centro/note_1_mockup.png", :alt "..."}]]]
 
-        [:a.left.carousel-control
-         {:href "#carousel-example-generic",
-          :role "button",
-          :data-slide "prev"}
-         [:span.glyphicon.glyphicon-chevron-left]]
-        [:a.right.carousel-control
-         {:href "#carousel-example-generic",
-          :role "button",
-          :data-slide "next"}
-         [:span.glyphicon.glyphicon-chevron-right]]]
+
 
        [:div.overview.col.span6
         [:div
