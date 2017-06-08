@@ -1,6 +1,6 @@
 (ns sarah-website.footer)
 
-(def footer-hiccup
+(def hiccup
   [:div.footer
     [:div.container-sml
      [:div.col-12.text-center

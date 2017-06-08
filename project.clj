@@ -12,7 +12,7 @@
                   :exclusions [org.clojure/tools.reader]]
                  [reagent "0.6.0"]
                  [hiccup "1.0.5"]]
-
+  :main sarah-website.core
   :plugins [[lein-figwheel "0.5.10"]
             [lein-cljsbuild "1.1.5" :exclusions [[org.clojure/clojure]]]]
 

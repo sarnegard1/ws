@@ -2,12 +2,8 @@
   (:require [sarah-website.recos :as recos]
             [sarah-website.work :as work]
             [sarah-website.footer :as footer]
-            [sarah-website.nav :as nav]))
-
-(defn image
-  ([source] (image source ""))
-  ([source alt]
-   [:img {:src source :alt alt}]))
+            [sarah-website.nav :as nav]
+            [sarah-website.util :as u]))
 
 (def betabrand-case
   [:div.container-lrg
@@ -23,30 +19,30 @@
     [:section
      [:div.flex
       [:div.col-3
-       (image "img/beta/Home.png" "...")
+       (u/image "img/beta/Home.png" "...")
        [:p [:strong "Home Page -"]
         " home page is decluttered, featuring only a few unique products rather than overwhelming the user"]]
       [:div.col-3
-       (image "img/beta/Category_page.png" "...")
+       (u/image "img/beta/Category_page.png" "...")
        [:p [:strong
             "Product Category Page -"]
         " added faceted navigation."]]
       [:div.col-3
-       (image "img/beta/Product_page.png" "...")
+       (u/image "img/beta/Product_page.png" "...")
        [:p [:strong "Product Page-"]
         " created tabs to hold additional information to decrease info hidden below the fold"]]
       [:div.col-3
-       (image "img/beta/Product_page.png" "...")
+       (u/image "img/beta/Product_page.png" "...")
        [:p [:strong "Product Page -"]
         " created tabs to hold additional information to decrease info hidden below the fold"]]]
      [:div.flex
       [:div.col-6
-       (image "img/beta/Checkout.png" "...")
+       (u/image "img/beta/Checkout.png" "...")
        [:p
         [:strong " One Page Checkout -"]
         " this would provide better visibility to the user to reduce errors"]]
       [:div.col-6
-       (image "img/beta/Order_review.png" "...")
+       (u/image "img/beta/Order_review.png" "...")
        [:p
         [:strong "Order Review -"]
         " allows user to double check all information before placing order"]]]]
@@ -57,16 +53,16 @@
      [:div.flex
       [:div.col-8
        [:p "I began by assesing the usability of the site, and conducting card sorting of product categories. I also did a lot of competitive analysis of ecommerce sites."]
-       (image "img/beta/deck/sarah_arnegard_project2.001.jpg")
-       (image "img/beta/deck/sarah_arnegard_project2.002.jpg")
-       (image "img/beta/deck/project2/project2.008.jpg")
-       (image "img/beta/deck/project2/project2.009.jpg")
-       (image "img/beta/deck/project2/project2.010.jpg")
-       (image "img/beta/deck/project2/project2.011.jpg")]]]]])
+       (u/image "img/beta/deck/sarah_arnegard_project2.001.jpg")
+       (u/image "img/beta/deck/sarah_arnegard_project2.002.jpg")
+       (u/image "img/beta/deck/project2/project2.008.jpg")
+       (u/image "img/beta/deck/project2/project2.009.jpg")
+       (u/image "img/beta/deck/project2/project2.010.jpg")
+       (u/image "img/beta/deck/project2/project2.011.jpg")]]]]])
 
 
 (defn content []
   [:div
-   [:header.header nav/nav-data]
+   [:header.header nav/hiccup]
    betabrand-case
-   footer-hiccup])
+   footer/hiccup])

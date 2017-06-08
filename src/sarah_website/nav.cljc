@@ -1,6 +1,6 @@
 (ns sarah-website.nav)
 
-(def nav-data
+(def hiccup
   [:div.container-lrg
    [:div.spread
     [:div [:a.logo "Sarah Arnegard"]]

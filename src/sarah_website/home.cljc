@@ -51,8 +51,8 @@
 
 (defn index []
   [:div
-   [:header.header nav/nav-data about-me]
+   [:header.header nav/hiccup about-me]
    specialties
    (work/works)
    (recos/content)
-   footer-hiccup])
+   footer/hiccup])

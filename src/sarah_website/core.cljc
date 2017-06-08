@@ -7,14 +7,16 @@
    #?(:clj [hiccup.page :as hp])
    #?(:cljs [reagent.core :as reagent :refer [atom]]))
   #?(:clj
-     (:import org.apache.commons.io.FileUtils)))
+     (:import org.apache.commons.io.FileUtils
+              java.awt.Desktop
+              java.net.URI
+              java.io.File)))
 
 (def pages
   {beta/content "betabrand.html"
    c/content "centro.html"
    bq/content "bookquest.html"
    home/index "index.html"})
-
 
 #?(:cljs
    (enable-console-print!))
@@ -38,6 +40,10 @@
    (defn spitter [filename content]
      (spit (str "blog/" filename) content)))
 
+#?(:clj (defn add-css [hiccup]
+
+          ))
+
 #?(:clj
    (defn compile-blog! []
      ;; copy css, etc.
@@ -48,10 +54,20 @@
      (FileUtils/copyDirectory (java.io.File. "resources/public/img")
                               (java.io.File. "blog/img"))
      ;; make blog posts
-     (doseq [[hic-fn filename] pages]
-       (println filename "->" #_(clojure.pprint/pprint
-                                (doall (hic-fn))))
-       (spitter filename (hp/html5 (hic-fn))))))
+     (try
+       (doseq [[hic-fn filename] pages]
+         (println filename "->" #_(clojure.pprint/pprint
+                                    (doall (hic-fn))))
+         (spitter filename (hp/html5
+                             [:link {:href "css/style.css"
+                                     :rel "stylesheet"
+                                     :type "text/css"}]
+                             (hic-fn))))
+       (.browse (Desktop/getDesktop)
+                (.toURI
+                  (File. (str (System/getProperty "user.dir")
+                              "/blog/index.html"))))
+       (println "All done.")
+       (catch Exception e "broken"))))
 
-#?(:clj
-   (compile-blog!))
+#?(:clj (defn -main [& args] (compile-blog!)))
