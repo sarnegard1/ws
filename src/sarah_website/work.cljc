@@ -3,13 +3,13 @@
 (def project-info
   [{:project-title "Centro Business Advising"
     :project-desc  "I worked with Centro Community Partners to design a business advising app based on their business advising. I worked on user research, scope definition and interaction design."
-    :project-link  "http://saraharnegard.com/centro.html"}
+    :project-link  "centro.html"}
    {:project-title "Scholastic BookQuest"
     :project-desc  " I conducted user research and competitive research to design a reading engagement app for children"
-    :project-link  "http://saraharnegard.com/BookQuest.html"}
+    :project-link  "/bookquest.html"}
    {:project-title "BetaBrand E-commerce checkout"
     :project-desc  "Information architecture for product display and purchasing flows"
-    :project-link  "http://saraharnegard.com/betabrand.html"}])
+    :project-link  "betabrand.html"}])
 
 (defn more-projects [{:keys [project-title project-desc project-link]}]
   [:div {:key project-title}

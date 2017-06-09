@@ -11,7 +11,4 @@ pom.xml
 .lein-plugins/
 .repl
 .nrepl-port
-blog
-blog/*
 /blog
-/blog/*

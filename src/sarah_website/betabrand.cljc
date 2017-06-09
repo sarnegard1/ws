@@ -61,8 +61,4 @@
        (u/image "img/beta/deck/project2/project2.011.jpg")]]]]])
 
 
-(defn content []
-  [:div
-   [:header.header nav/hiccup]
-   betabrand-case
-   footer/hiccup])
+(defn content [] (u/wrap-page betabrand-case))
