@@ -10,7 +10,7 @@
    [:h1.center "Centro Business Advising"]
    [:section
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:div
        [:p
         "Centro Community Partners mission is to help communities grow by matching small business entrepreneurs with volunteer business advisors. They came to our team for a mobile app to improve advisor's communication with their entrepreneurs and improve advisor efficiency."]
@@ -26,7 +26,7 @@
         [:small " This will open Invision in a new tab"]]]]]]
    [:section
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:h2.center "Process"]
       [:p
        "I spent time learning about Centro's needs and interviewing business advisors who would be using the app. Through this process I uncovered the following pain points: "]
@@ -45,7 +45,7 @@
        "I then moved on to sketching to begin generating and testing ideas. I tackled the app dashboard, which would contain the main navigation, as well as a feature that would allow advisors to create notes about their entrepreneur's business plan"]]]]
    [:section
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:h2.center "App Structure"]
       [:img.constrain {:src "img/centro/site_map.png", :alt ""}]
       [:h3 "Dashboard Sketches"]
@@ -64,7 +64,7 @@
 
    [:section
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:h3 "Annotation flow paper prototypes"]
       [:img {:src "img/centro/note_flow_1_v2.jpg", :alt ""}]
       [:p
@@ -75,14 +75,14 @@
        [:strong "Flow 2- "]
        "Creating a marker linked to a note"]]]
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:p
        "Initially I wasn't sure whether to follow an annotation model, or create simple text notes that were linked to the entrepreneur's business plan. One of the problems, was that the business plan was very content heavy, but was presented as a single piece, which users found unwieldy on mobile. This made it difficult to keep notes in context. After breaking the business plan into logical sections, the text note pages were more contextualized, while allowing for longer notes."]]]]
 
 
    [:section.container
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:h3.center "More refined annotation flow after testing"]
       [:p.center
        [:a {:target "_blank", :href "http://invis.io/GS18JQTPB"}

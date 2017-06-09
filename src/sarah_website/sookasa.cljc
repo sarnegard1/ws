@@ -9,7 +9,7 @@
     [:h1.center "Sookasa People Tab Redesign"]
     [:section
       [:div.flex
-        [:div.col-8
+        [:div.container-sml
           [:p "This piece was originally written for the Sookasa blog"]
           [:p "Sookasa enables companies to use the tools they love, like Dropbox and Google Drive, while remaining secure and compliant. We believe it’s essential in an industry like ours to rely on user-centered design: For something as sensitive (and complex) as securing data, providing a seamless experience helps customers feel confident and empowered. A few months ago, the Product team realized it was time to rethink how the various features on our app come together. As a lean customer-driven startup, we’re rapidly adding features our users need and want for their work. But this adds a lot of complexity to our app, and since we launched publicly in April 2014, we hadn’t yet optimized how all our new features came together."]
           [:div

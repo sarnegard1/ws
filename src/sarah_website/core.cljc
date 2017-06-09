@@ -71,9 +71,9 @@
                       [:link {:href "css/style.css"
                               :rel "stylesheet"
                               :type "text/css"}]
-                      [:link {:href (if resume "css/resume.css")
-                              :rel "stylesheet"
-                              :type "text/css"}]
+                      (when resume [:link {:href "css/resume.css"
+                                            :rel "stylesheet"
+                                            :type "text/css"}])
                       (hic-fn)))))
        (println "All done.")
        (->> "blog/index.html"

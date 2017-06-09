@@ -58,7 +58,7 @@
     [:div.container-lrg
      [:div.flex
       (into
-        [:div.col-8
+        [:div.container-sml
          [:h3.center "Additional projects"]]
         (map more-projects project-info))]]
     [:div.container-lrg.flex]]])

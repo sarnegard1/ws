@@ -11,7 +11,7 @@
 
    [:section
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:p
        "For this project, our team was tasked with creating a reading engagement program for Scholastic. Our first course of action was to research what goals Scholastic would seek to accomplish through this program. We found that Scholastic's reputation as an educational resource was in decline among students and teachers. The question then became, how can we build an application that regains Scholastic's reputation and increase children's interest in reading? Our solution was to create a reading incentive product that is engaging and educational for children. We believe this would :"]
       [:ul
@@ -21,7 +21,7 @@
 
    [:section
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:h3 "Challenge"]
       [:p "We were tasked with creating a reading engagement product for Scholastic."]
       [:div [:h3 "Duration"] [:p "2 Weeks"]]
@@ -37,7 +37,7 @@
    [:section
     [:h2.section-title.center "Business Research"]
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
 
       (u/image "img/schol/comp_analysis_chart.png" "Competitive Analysis Diagram")
       [:h3 "Reading program competitive landscape"]
@@ -70,7 +70,7 @@
    [:section.container
     [:h2.center "User Research"]
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:p "We visited a playground at Yerba Buena Center to conduct user interviews and sent out surveys to parents and teachers in our network"]
       [:div.row
        [:div.col-md-6
@@ -108,7 +108,7 @@
      [:div.col-6
       (u/image "img/schol/persona_adult.png" "")]]
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:h3 "Personas"]
       [:p
        "Using our research, we created empathy maps for our parent user and child user. This helped us develop our personas."]
@@ -133,7 +133,7 @@
    [:section.container-lrg
     [:h2.center "Mapping flows and app structure"]
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:p "The app had two target users, parents and students, who would each have different views in the app. Students could be under 13 years old which meant that additional steps were needed to allow them to sign up safely and securely."]
       [:h3.center "User Flows"]]]
     [:div.flex
@@ -151,7 +151,7 @@
    [:section.container-lrg
     [:h2.center "Wireframes"]
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:p "These are some of the wireframes I created for various parts of the website. The online app allows students to log reading, test their knowledge and earn prizes. It also allows parents to view their child's progress and add custom prizes."]]]
     [:div.flex
      [:div.col-4
@@ -164,11 +164,11 @@
    [:section
     [:h2.center "Low-fi Clickable Prototype"]
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:a.button-link
        {:target "_blank", :href "http://invis.io/KC10SCQ8Q"}
        "Visit complete prototype"]
-      [:small " This will open Invision in a new tab"]
+      [:small "&nbsp; This will open Invision in a new tab"]
       [:p
        "User goals addressed through student challenges:"]
       [:ul

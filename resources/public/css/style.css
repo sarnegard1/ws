@@ -36,7 +36,7 @@ body {
   font-weight: 100;
   font-size: 50px;
   line-height: 68px;
-	
+
 }
 
 a {
@@ -72,8 +72,8 @@ blockquote {
   }
 }
 .paragraph {
-  font-size: 17px;
-  line-height: 32px;
+
+  
   font-weight: 100;
 }
 .heading + .paragraph {
@@ -82,9 +82,7 @@ blockquote {
 .subheading + .paragraph {
   margin-top: 10px;
 }
-p.paragraph {
-  color: rgba(0,0,0,.5);
-}
+
 .logo {
   font-size: 30px;
   line-height: 30px;
@@ -190,7 +188,7 @@ p.paragraph {
 .sidedevices {
   position: relative;
 }.header {
-	padding: 20px 0 90px 0;
+	padding: 20px 10px 90px 10px;
 	overflow: hidden;
 }
 .header .heading {

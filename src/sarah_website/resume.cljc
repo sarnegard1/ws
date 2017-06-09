@@ -89,10 +89,16 @@
     :title "VP of Product"
     :company "Sookasa"}])
 
+(def download-pdf
+  [:section
+    [:div.flex.container-lrg
+      [:p.center
+        [:a {:href "sarah_arnegard_resume.pdf" :download "."} "Download my resume"]
+        [:span "&nbsp; in PDF format (22kb)"]]]])
 
-(defn resume-hiccup []
-  [:div.page
-    [:div.flex
+(defn resume-builder []
+  [:div.container-lrg
+    [:div
       [:div.left-column
         [:h1 "Sarah Arnegard"]
         [:h2 "UX and Customer Research Specialist"]
@@ -129,6 +135,8 @@
 (defn content []
   [:div
     [:header.header nav/hiccup]
-    [:div.resume
-      (resume-hiccup)]
+    download-pdf
+    [:section.resume
+      (resume-builder)]
+    download-pdf
     footer/hiccup])
