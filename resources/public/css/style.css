@@ -9,11 +9,12 @@ body{
   font-size: 14pt;
 }
 
-h3 {
+h3, .nav-link {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 	font-size: 12pt;
   color: #3f51b5;
+  font-weight: bold;
 }
 
 /** {
@@ -46,11 +47,12 @@ body {
 }
 
 a {
-	color: #4C7533;
+	/*color: #4C7533;*/
+  color: #3f51b5;
 }
 
 a:hover {
-	color: #82B638;
+	color: #8595ef;
 }
 
 @media (max-width: 900px) {
@@ -103,14 +105,13 @@ p.paragraph {
 .nav-link2,
 .nav-link {
   text-decoration: none;
-  font-size: 18px;
   line-height: 30px;
-  color: #4C7533;
+
 }
 
 .nav-link2:hover,
 .nav-link:hover {
-	color: #82B638;
+	color: #8595ef;
 }
 .nav-link:not(:first-of-type) {
   margin-left: 20px;
