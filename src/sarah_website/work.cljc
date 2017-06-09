@@ -46,7 +46,7 @@
       [:p.paragraph
        "As the only full time designer for "
        [:a {:href "https://www.sookasa.com/"} "Sookasa"]
-       ", I worked on a wide range of products including signup optimization, a full "
+       ", I worked on a wide range of projects including signup optimization, a full "
        [:a {:href "sookasa.html"} "UI redesign"]
        ", and a new threat scanning product"]]
      [:div.col-1]

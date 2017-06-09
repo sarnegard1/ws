@@ -3,7 +3,7 @@
 (def hiccup
   [:div.container-lrg
    [:div.spread
-    [:div [:a.logo "Sarah Arnegard"]]
+    [:div [:a.logo {:href "index.html"} "Sarah Arnegard"]]
     [:div
      [:a.nav-link {:href "index.html#work"} "Work "]
      [:a.nav-link {:href "https://blog.saraharnegard.com"} "Blog"]
