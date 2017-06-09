@@ -16,7 +16,8 @@
   {beta/content "betabrand.html"
    c/content "centro.html"
    bq/content "bookquest.html"
-   home/index "index.html"})
+   home/index "index.html"
+   (fn [] [:h2 "I'm Sarah."]) "resume.html"})
 
 #?(:cljs
    (enable-console-print!))
@@ -40,34 +41,43 @@
    (defn spitter [filename content]
      (spit (str "blog/" filename) content)))
 
-#?(:clj (defn add-css [hiccup]
-
-          ))
-
 #?(:clj
    (defn compile-blog! []
      ;; copy css, etc.
-     (FileUtils/copyDirectory (java.io.File. "resources/public/css")
-                              (java.io.File. "blog/css"))
-     (FileUtils/copyDirectory (java.io.File. "resources/public/js")
-                              (java.io.File. "blog/js"))
-     (FileUtils/copyDirectory (java.io.File. "resources/public/img")
-                              (java.io.File. "blog/img"))
+     (FileUtils/copyDirectory
+       (java.io.File. "resources/public/css")
+       (java.io.File. "blog/css"))
+     (let [js false]
+       (when js
+         (FileUtils/copyDirectory
+           (java.io.File. "resources/public/js")
+           (java.io.File. "blog/js"))))
+     (FileUtils/copyDirectory
+       (java.io.File. "resources/public/img")
+       (java.io.File. "blog/img"))
      ;; make blog posts
      (try
        (doseq [[hic-fn filename] pages]
-         (println filename "->" #_(clojure.pprint/pprint
-                                    (doall (hic-fn))))
-         (spitter filename (hp/html5
-                             [:link {:href "css/style.css"
-                                     :rel "stylesheet"
-                                     :type "text/css"}]
-                             (hic-fn))))
-       (.browse (Desktop/getDesktop)
-                (.toURI
-                  (File. (str (System/getProperty "user.dir")
-                              "/blog/index.html"))))
+         (let [resume (re-matches #".*resume.html" filename)]
+           (println "Compiling" filename " ...")
+           (when resume
+             (println " --- it's your resume --- "))
+           (spitter filename
+                    (hp/html5
+                      [:link {:href (if resume "css/resume.css" "css/style.css")
+                              :rel "stylesheet"
+                              :type "text/css"}]
+                      (hic-fn)))))
        (println "All done.")
-       (catch Exception e "broken"))))
+       (->> "blog/index.html"
+            (str (System/getProperty "user.dir") "/")
+            File.
+            .toURI
+            (.browse (Desktop/getDesktop)))
+       (catch Exception e
+         (println e)
+         "broken"))))
 
-#?(:clj (defn -main [& args] (compile-blog!)))
+#?(:clj
+   (defn -main [& args]
+     (compile-blog!)))

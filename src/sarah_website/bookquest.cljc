@@ -185,21 +185,11 @@
          [:strong "Creative Confidence & Engagement: "]
          "open ended prompts to encourage deeper thinking and give importance to the child’s own thoughts and beliefs"]]]]]
     [:div.flex
-     [:div.col-4
-      (u/image "img/schol/k_quiz_1.png" "...")]
-     [:div.col-4
-      (u/image "img/schol/k_quiz_2.png" "...")]
-     [:div.col-4
-      (u/image "img/schol/k_quiz_3.png" "...")]]
-
+     [:div.col-4 (u/image "img/schol/k_quiz_1.png" "...")]
+     [:div.col-4 (u/image "img/schol/k_quiz_2.png" "...")]
+     [:div.col-4 (u/image "img/schol/k_quiz_3.png" "...")]]
     [:div.flex
-     [:div.col-4
-      (u/image "img/schol/k_quiz_4.png" "...")]
-     [:div.col-4
-      (u/image "img/schol/k_quiz_5.png" "...")]]]])
+     [:div.col-4 (u/image "img/schol/k_quiz_4.png" "...")]
+     [:div.col-4 (u/image "img/schol/k_quiz_5.png" "...")]]]])
 
-(defn content[]
-  [:div
-   [:header.header nav/hiccup]
-   case-study
-   footer/hiccup])
+(defn content[] (u/wrap-page case-study))

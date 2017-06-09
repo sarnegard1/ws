@@ -2,7 +2,8 @@
   (:require [sarah-website.recos :as recos]
             [sarah-website.work :as work]
             [sarah-website.footer :as footer]
-            [sarah-website.nav :as nav]))
+            [sarah-website.nav :as nav]
+            [sarah-website.util :as u]))
 
 (def centro-case
   [:div.container-lrg
@@ -114,8 +115,5 @@
       [:img.centro-screen
        {:src "img/centro/resize/biz_plan_note_icon.jpg"}]]]]])
 
-(defn content[]
-  [:div
-   [:header.header nav/hiccup]
-   centro-case
-   footer/hiccup])
+(defn content []
+  (u/wrap-page centro-case))
