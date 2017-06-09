@@ -8,5 +8,5 @@
      [:a.nav-link {:href "index.html#work"} "Work "]
      [:a.nav-link {:href "https://blog.saraharnegard.com"} "Blog"]
      [:a.nav-link
-      {:href "/resume.html"}
+      {:href "resume.html"}
       "Resume"]]]])

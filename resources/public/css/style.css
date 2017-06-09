@@ -17,14 +17,7 @@ h3, .nav-link {
   font-weight: bold;
 }
 
-/** {
-	font-family: 'Fira Sans', sans-serif;
-}*/
-.footer,
-.header {
-	/*background: #ABA0CB;
-	color: white;*/
-}
+
 .ctas-button {
 	color: #444;
 }
@@ -43,7 +36,7 @@ body {
   font-weight: 100;
   font-size: 50px;
   line-height: 68px;
-	/*font-family: 'Palanquin Dark', 'Fira Sans', sans-serif;*/
+	
 }
 
 a {
@@ -96,6 +89,7 @@ p.paragraph {
   font-size: 30px;
   line-height: 30px;
   font-weight: 900;
+  text-decoration: none;
 }
 @media (max-width: 420px) {
   .logo {

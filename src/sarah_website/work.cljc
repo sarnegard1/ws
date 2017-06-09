@@ -6,8 +6,8 @@
     :project-link  "centro.html"}
    {:project-title "Scholastic BookQuest"
     :project-desc  " I conducted user research and competitive research to design a reading engagement app for children"
-    :project-link  "/bookquest.html"}
-   {:project-title "BetaBrand E-commerce checkout"
+    :project-link  "bookquest.html"}
+   {:project-title "Betabrand E-commerce Redesign"
     :project-desc  "Information architecture for product display and purchasing flows"
     :project-link  "betabrand.html"}])
 

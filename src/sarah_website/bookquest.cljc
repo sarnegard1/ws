@@ -7,7 +7,7 @@
 
 (def case-study
   [:div.container-lrg
-   [:h1.center "BookQuest"]
+   [:h1.center "Scholastic BookQuest"]
 
    [:section
     [:div.flex

@@ -7,7 +7,7 @@
 
 (def betabrand-case
   [:div.container-lrg
-   [:h1.center "Betabrand Redesign"]
+   [:h1.center "Betabrand E-commerce Redesign"]
    [:section
     [:div.flex
      [:div.col-8

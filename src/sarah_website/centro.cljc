@@ -7,7 +7,7 @@
 
 (def centro-case
   [:div.container-lrg
-   [:h1.center "Centro Community Partners"]
+   [:h1.center "Centro Business Advising"]
    [:section
     [:div.flex
      [:div.col-8
