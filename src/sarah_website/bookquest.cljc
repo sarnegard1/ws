@@ -192,4 +192,4 @@
      [:div.col-4 (u/image "img/schol/k_quiz_4.png" "...")]
      [:div.col-4 (u/image "img/schol/k_quiz_5.png" "...")]]]])
 
-(defn content[] (u/wrap-page case-study))
+(defn content [] (u/wrap-page case-study))
