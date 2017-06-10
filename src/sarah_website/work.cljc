@@ -3,13 +3,13 @@
 (def project-info
   [{:project-title "Centro Business Advising"
     :project-desc  "I worked with Centro Community Partners to design a business advising app based on their business advising. I worked on user research, scope definition and interaction design."
-    :project-link  "http://saraharnegard.com/centro.html"}
+    :project-link  "centro.html"}
    {:project-title "Scholastic BookQuest"
     :project-desc  " I conducted user research and competitive research to design a reading engagement app for children"
-    :project-link  "http://saraharnegard.com/BookQuest.html"}
-   {:project-title "BetaBrand E-commerce checkout"
+    :project-link  "bookquest.html"}
+   {:project-title "Betabrand E-commerce Redesign"
     :project-desc  "Information architecture for product display and purchasing flows"
-    :project-link  "http://saraharnegard.com/betabrand.html"}])
+    :project-link  "betabrand.html"}])
 
 (defn more-projects [{:keys [project-title project-desc project-link]}]
   [:div {:key project-title}
@@ -20,7 +20,7 @@
     "Read more"]])
 
 (defn works []
-  [:div
+  [:div#work
    [:div.feature4
     [:h2.center "What I've worked on"]
     [:div.container-lrg.flex
@@ -46,7 +46,7 @@
       [:p.paragraph
        "As the only full time designer for "
        [:a {:href "https://www.sookasa.com/"} "Sookasa"]
-       ", I worked on a wide range of products including signup optimization, a full "
+       ", I worked on a wide range of projects including signup optimization, a full "
        [:a {:href "sookasa.html"} "UI redesign"]
        ", and a new threat scanning product"]]
      [:div.col-1]
@@ -58,7 +58,7 @@
     [:div.container-lrg
      [:div.flex
       (into
-        [:div.col-8
+        [:div.container-sml
          [:h3.center "Additional projects"]]
         (map more-projects project-info))]]
     [:div.container-lrg.flex]]])

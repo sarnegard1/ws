@@ -29,7 +29,7 @@
 (defn content []
     [:div.feature3
       [:div.container-lrg
-        [:h2 "What people say about me"]
+        [:h2.center "What people say about me"]
         (into [:div.flex]
               (map recos recos-data))]])
 

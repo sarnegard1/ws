@@ -7,15 +7,15 @@
 
 (def betabrand-case
   [:div.container-lrg
-   [:h1.center "Betabrand Redesign"]
+   [:h1.center "Betabrand E-commerce Redesign"]
    [:section
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:p "Betabrand is a clothing company based in San Francisco that carries unique and quirky products, including crowdsourced products. They have a small cult following but would like to expand their reach. Users found the products on their website difficult to navigate and the crowdfunding process difficult to understand and complete."]
       [:h3 "My Role"]
       [:p "For this project I worked on information architecture, product display and filtering, product page layout and checkout flows."]
       [:a {:target "_blank", :href "http://invis.io/7R18S468P"} "View Prototype"]
-      [:small "This will open Invision in a new tab"]]]
+      [:small "&nbsp;This will open Invision in a new tab"]]]
     [:section
      [:div.flex
       [:div.col-3
@@ -51,7 +51,7 @@
     [:section
      [:h2.center "Process"]
      [:div.flex
-      [:div.col-8
+      [:div.container-sml
        [:p "I began by assesing the usability of the site, and conducting card sorting of product categories. I also did a lot of competitive analysis of ecommerce sites."]
        (u/image "img/beta/deck/sarah_arnegard_project2.001.jpg")
        (u/image "img/beta/deck/sarah_arnegard_project2.002.jpg")

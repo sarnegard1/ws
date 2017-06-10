@@ -5,6 +5,7 @@
    [sarah-website.betabrand :as beta]
    [sarah-website.bookquest :as bq]
    [sarah-website.sookasa :as s]
+   [sarah-website.resume :as resume]
    #?(:clj [hiccup.page :as hp])
    #?(:cljs [reagent.core :as reagent :refer [atom]]))
   #?(:clj
@@ -19,7 +20,7 @@
    c/content "centro.html"
    bq/content "bookquest.html"
    home/index "index.html"
-   (fn [] [:h2 "I'm Sarah."]) "resume.html"})
+   resume/content "resume.html"})
 
 #?(:cljs
    (enable-console-print!))
@@ -67,9 +68,12 @@
              (println " --- it's your resume --- "))
            (spitter filename
                     (hp/html5
-                      [:link {:href (if resume "css/resume.css" "css/style.css")
+                      [:link {:href "css/style.css"
                               :rel "stylesheet"
                               :type "text/css"}]
+                      (when resume [:link {:href "css/resume.css"
+                                            :rel "stylesheet"
+                                            :type "text/css"}])
                       (hic-fn)))))
        (println "All done.")
        (->> "blog/index.html"

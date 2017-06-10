@@ -6,7 +6,7 @@
 
 (def hiccup
   [:div.footer
-    [:div.container-sml
+    [:div.flex.container-sml
      [:div.col-12.text-center
       [:div
        [:p "Get in touch"]
@@ -16,4 +16,4 @@
       [:br]
       [:div
        [:span
-        "© 2017 Sarah Arnegard  "]]]]])
+        "&copy; 2017 Sarah Arnegard  "]]]]])

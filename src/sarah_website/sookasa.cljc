@@ -9,7 +9,8 @@
     [:h1.center "Sookasa People Tab Redesign"]
     [:section
       [:div.flex
-        [:div.col-8
+        [:div.container-sml
+          [:p "This piece was originally written for the Sookasa blog"]
           [:p "Sookasa enables companies to use the tools they love, like Dropbox and Google Drive, while remaining secure and compliant. We believe it’s essential in an industry like ours to rely on user-centered design: For something as sensitive (and complex) as securing data, providing a seamless experience helps customers feel confident and empowered. A few months ago, the Product team realized it was time to rethink how the various features on our app come together. As a lean customer-driven startup, we’re rapidly adding features our users need and want for their work. But this adds a lot of complexity to our app, and since we launched publicly in April 2014, we hadn’t yet optimized how all our new features came together."]
           [:div
             [:img {:src "https://saraharnegard.files.wordpress.com/2017/06/old-people-tab.png", :alt "old-people-tab"}]
@@ -41,11 +42,8 @@
 
             After dozens of prototypes and even more discovery interviews, we finally had a design that clicked. New testers and existing customers understood it right away."]
           [:img {:src "https://saraharnegard.files.wordpress.com/2017/06/screenshot.png", :alt "screenshot"}]
-          [:p "Our People tab feels easy and obvious now, but that belies the effort that customer-centric design techniques demand. It seems like a simple feature, but simplicity takes a lot of work. Our customer-focused design techniques also gave us confidence as we rolled out the new design to all of our users. We weren’t biting our fingernails wondering how it’d be received; we knew the revamped People tab would improve the workflow of administrators before it even launched.I’m extremely proud about what we were able to achieve, but it’s not the end. We’ll be improving the page as we gain more insights, just like we do with every other feature."]
-          [:p "You can check out the latest iteration of the "
-            [:a {:href "https://cloud.sookasa.com/"}
-                "People tab"]
-            " on the app now. Give it a try, and let us know what you think."]]]]])
+          [:p "Our People tab feels easy and obvious now, but that belies the effort that customer-centric design techniques demand. It seems like a simple feature, but simplicity takes a lot of work. Our customer-focused design techniques also gave us confidence as we rolled out the new design to all of our users. We weren’t biting our fingernails wondering how it’d be received; we knew the revamped People tab would improve the workflow of administrators before it even launched.I’m extremely proud about what we were able to achieve, but it’s not the end. We’ll be improving the page as we gain more insights, just like we do with every other feature."]]]]])
+
 
 (defn content[]
   [:div

@@ -10,4 +10,5 @@
 (defn wrap-page [page-content]
   [:div
    [:header.header nav/hiccup]
+   page-content
    footer/hiccup])

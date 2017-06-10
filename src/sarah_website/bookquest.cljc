@@ -7,11 +7,11 @@
 
 (def case-study
   [:div.container-lrg
-   [:h1.center "BookQuest"]
+   [:h1.center "Scholastic BookQuest"]
 
    [:section
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:p
        "For this project, our team was tasked with creating a reading engagement program for Scholastic. Our first course of action was to research what goals Scholastic would seek to accomplish through this program. We found that Scholastic's reputation as an educational resource was in decline among students and teachers. The question then became, how can we build an application that regains Scholastic's reputation and increase children's interest in reading? Our solution was to create a reading incentive product that is engaging and educational for children. We believe this would :"]
       [:ul
@@ -21,7 +21,7 @@
 
    [:section
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:h3 "Challenge"]
       [:p "We were tasked with creating a reading engagement product for Scholastic."]
       [:div [:h3 "Duration"] [:p "2 Weeks"]]
@@ -37,7 +37,7 @@
    [:section
     [:h2.section-title.center "Business Research"]
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
 
       (u/image "img/schol/comp_analysis_chart.png" "Competitive Analysis Diagram")
       [:h3 "Reading program competitive landscape"]
@@ -70,24 +70,30 @@
    [:section.container
     [:h2.center "User Research"]
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:p "We visited a playground at Yerba Buena Center to conduct user interviews and sent out surveys to parents and teachers in our network"]
       [:div.row
        [:div.col-md-6
         [:h3 "Example Quotes"]
         [:ul
          [:li
-          "“The program should make sure kids actually read the books they said”"]
-         [:li "“The programs we used were too easy to game”"]
-         [:li "“There needs to be awesome prizes”"]
+            [:q
+              "The program should make sure kids actually read the books they said"]]
          [:li
-          "“[Children] have more access to desktops and tablets than mobile devices” "]
+            [:q "The programs we used were too easy to game"]]
          [:li
-          "“My daughter did a summer reading program, now she reads at a high school level”"]
+            [:q "There needs to be awesome prizes"]]
          [:li
-          "“I don’t like the books my son wants from the book fair”"]
+          "“[Children] have more access to desktops and tablets than mobile devices"]
          [:li
-          "“There is a lot competing for children's time such as TV and activities”"]]]
+            [:q
+              "My daughter did a summer reading program, now she reads at a high school level"]]
+         [:li
+           [:q
+            "I don&rsquo;t like the books my son wants from the book fair"]]
+         [:li
+            [:q
+              "There is a lot competing for children's time such as TV and activities"]]]]
        [:div.col-md-6
         [:h3 "Common themes identified through affinity mapping"]
         [:ul
@@ -108,7 +114,7 @@
      [:div.col-6
       (u/image "img/schol/persona_adult.png" "")]]
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:h3 "Personas"]
       [:p
        "Using our research, we created empathy maps for our parent user and child user. This helped us develop our personas."]
@@ -119,7 +125,7 @@
       [:p
        "How might we measurably increase Jenny's reading by using extrinsic rewards catered to her as well as instrinsic rewards in a sense of mastery and accomplishment?"]
       [:p
-       "How might we regain Scholastic’s reputation as an educational company while creating interest around Scholastic products?"]
+       "How might we regain Scholastic&rsquo;s reputation as an educational company while creating interest around Scholastic products?"]
 
       [:h3 "User Scenarios"]
       [:p "From here, we used the personas to create SSNiFs (Stakeholder, Situation, Needs and Features charts ). This allowed us to identify possible features that were directly tied to our users' needs. Next, we prioritized the features and decided which ones we would design for our MVP."]]]
@@ -133,7 +139,7 @@
    [:section.container-lrg
     [:h2.center "Mapping flows and app structure"]
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:p "The app had two target users, parents and students, who would each have different views in the app. Students could be under 13 years old which meant that additional steps were needed to allow them to sign up safely and securely."]
       [:h3.center "User Flows"]]]
     [:div.flex
@@ -151,7 +157,7 @@
    [:section.container-lrg
     [:h2.center "Wireframes"]
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:p "These are some of the wireframes I created for various parts of the website. The online app allows students to log reading, test their knowledge and earn prizes. It also allows parents to view their child's progress and add custom prizes."]]]
     [:div.flex
      [:div.col-4
@@ -164,11 +170,11 @@
    [:section
     [:h2.center "Low-fi Clickable Prototype"]
     [:div.flex
-     [:div.col-8
+     [:div.container-sml
       [:a.button-link
        {:target "_blank", :href "http://invis.io/KC10SCQ8Q"}
        "Visit complete prototype"]
-      [:small " This will open Invision in a new tab"]
+      [:small "&nbsp; This will open Invision in a new tab"]
       [:p
        "User goals addressed through student challenges:"]
       [:ul
@@ -183,7 +189,7 @@
        [:li
         [:p
          [:strong "Creative Confidence & Engagement: "]
-         "open ended prompts to encourage deeper thinking and give importance to the child’s own thoughts and beliefs"]]]]]
+         "open ended prompts to encourage deeper thinking and give importance to the child&rsquo;s own thoughts and beliefs"]]]]]
     [:div.flex
      [:div.col-4 (u/image "img/schol/k_quiz_1.png" "...")]
      [:div.col-4 (u/image "img/schol/k_quiz_2.png" "...")]

@@ -7,7 +7,7 @@
 (def about-me
   [:div.container-sml.text-center
    [:div.col-12
-    [:h1.heading "I’m driven by discovering insights that lead to meaningful improvements in people’s lives"]]])
+    [:h1.heading "I&rsquo;m driven by discovering insights that lead to meaningful improvements in people&rsquo;s lives"]]])
 
 (def specialties
   [:div.feature3
