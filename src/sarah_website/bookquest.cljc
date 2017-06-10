@@ -77,17 +77,23 @@
         [:h3 "Example Quotes"]
         [:ul
          [:li
-          "“The program should make sure kids actually read the books they said”"]
-         [:li "“The programs we used were too easy to game”"]
-         [:li "“There needs to be awesome prizes”"]
+            [:q
+              "The program should make sure kids actually read the books they said"]]
          [:li
-          "“[Children] have more access to desktops and tablets than mobile devices” "]
+            [:q "The programs we used were too easy to game"]]
          [:li
-          "“My daughter did a summer reading program, now she reads at a high school level”"]
+            [:q "There needs to be awesome prizes"]]
          [:li
-          "“I don’t like the books my son wants from the book fair”"]
+          "“[Children] have more access to desktops and tablets than mobile devices"]
          [:li
-          "“There is a lot competing for children's time such as TV and activities”"]]]
+            [:q
+              "My daughter did a summer reading program, now she reads at a high school level"]]
+         [:li
+           [:q
+            "I don&rsquo;t like the books my son wants from the book fair"]]
+         [:li
+            [:q
+              "There is a lot competing for children's time such as TV and activities"]]]]
        [:div.col-md-6
         [:h3 "Common themes identified through affinity mapping"]
         [:ul
@@ -119,7 +125,7 @@
       [:p
        "How might we measurably increase Jenny's reading by using extrinsic rewards catered to her as well as instrinsic rewards in a sense of mastery and accomplishment?"]
       [:p
-       "How might we regain Scholastic’s reputation as an educational company while creating interest around Scholastic products?"]
+       "How might we regain Scholastic&rsquo;s reputation as an educational company while creating interest around Scholastic products?"]
 
       [:h3 "User Scenarios"]
       [:p "From here, we used the personas to create SSNiFs (Stakeholder, Situation, Needs and Features charts ). This allowed us to identify possible features that were directly tied to our users' needs. Next, we prioritized the features and decided which ones we would design for our MVP."]]]
@@ -183,7 +189,7 @@
        [:li
         [:p
          [:strong "Creative Confidence & Engagement: "]
-         "open ended prompts to encourage deeper thinking and give importance to the child’s own thoughts and beliefs"]]]]]
+         "open ended prompts to encourage deeper thinking and give importance to the child&rsquo;s own thoughts and beliefs"]]]]]
     [:div.flex
      [:div.col-4 (u/image "img/schol/k_quiz_1.png" "...")]
      [:div.col-4 (u/image "img/schol/k_quiz_2.png" "...")]

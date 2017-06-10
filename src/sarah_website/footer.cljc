@@ -18,4 +18,4 @@
       [:br]
       [:div
        [:span
-        "© 2017 Sarah Arnegard  "]]]]])
+        "&copy; 2017 Sarah Arnegard  "]]]]])
