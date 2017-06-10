@@ -11,7 +11,8 @@
                  [org.clojure/core.async  "0.3.442"
                   :exclusions [org.clojure/tools.reader]]
                  [reagent "0.6.0"]
-                 [hiccup "1.0.5"]]
+                 [hiccup "1.0.5"]
+                 [rum "0.10.8"]]
   :main sarah-website.core
   :plugins [[lein-figwheel "0.5.10"]
             [lein-cljsbuild "1.1.5" :exclusions [[org.clojure/clojure]]]]
@@ -99,8 +100,10 @@
                    ;; need to add dev source path here to get user.clj loaded
                    :source-paths ["src" "dev"]
                    ;; for CIDER
-                   ;; :plugins [[cider/cider-nrepl "0.12.0"]]
-                   :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
+                   :plugins [[cider/cider-nrepl "0.15.0-SNAPSHOT"]]
+                   :repl-options {:nrepl-middleware [cider.nrepl/cider-middleware
+                                                     refactor-nrepl.middleware/wrap-refactor
+                                                     cemerick.piggieback/wrap-cljs-repl]}
                    ;; need to add the compliled assets to the :clean-targets
                    :clean-targets ^{:protect false} ["resources/public/js/compiled"
                                                      :target-path]}})
